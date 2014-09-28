@@ -20,7 +20,7 @@ function Select(){
   var selected;
   
   index = document.getElementById("OPTIONS").selectedIndex;
-  selected = document.getElementByTagName("option")[index].value;
+  selected = document.getElementsByTagName("option")[index].value;
   document.getElementById("selected").innerHTML="You selected:"+selected;
   window.alert("Test goal accomplished")
 }
