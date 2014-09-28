@@ -12,10 +12,24 @@ width: 200;
 height: 50;
 }
 </style>
-<button type="button">
-<select class="select">
+
+<!-- okay trying to detect option selected-->
+<script>
+function Select(){
+  var index;
+  var selected;
+  
+  index = document.getElementById("OPTIONS").selectedIndex;
+  selected = document.getElementByTagName("option")[index].value;
+  document.getElementById("selected").innerHTML="You selected:"+selected;
+  window.alert("Test goal accomplished")
+}
+</script>
+<select class="select" id="OPTIONS">
 <option  class="selected" name="----">--select--</option>
 <option name="S1">Select option 1 </option>
 <option name="S2">Select option 2 </option>
 </select>
-</button>
+<button style="background-color: blue;" onclick="Select()">Submit</button>
+<br>
+<p id="selected">You selected: </p>
