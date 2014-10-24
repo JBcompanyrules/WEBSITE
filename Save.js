@@ -10,3 +10,4 @@ else if(user=="HASHARAHHA14"){
 else{
 alert("Welcome, "+localStorage.getItem("user")+" "+"To JBcompanyrules a MCPE modding website");
 }
+
