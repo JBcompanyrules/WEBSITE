@@ -8,5 +8,5 @@ else if(user=="HASHARAHHA14"){
   alert("Welcome HASHARAHHA14")
 }
 else{
-alert("Welcome, "+localStorage.getItem("user"));
+alert("Welcome, "+localStorage.getItem("user")+" "+"To JBcompanyrules a MCPE modding website");
 }
